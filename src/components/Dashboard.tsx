@@ -403,7 +403,7 @@ const Dashboard = ({ title }: DashProps) => {
                     Finish ticket update
                   </TableCell>
                   <TableCell>
-                    <Chip label="URGENT" sx={{ backgroundColor: "yellow" }} />
+                    <Chip label="URGENT" color="warning" sx={{fontSize: "10px"}}/>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -412,7 +412,7 @@ const Dashboard = ({ title }: DashProps) => {
                     Create new ticket example
                   </TableCell>
                   <TableCell>
-                    <Chip label="NEW" sx={{ backgroundColor: "green" }} />
+                    <Chip label="NEW" color="success" sx={{fontSize: "10px"}}/>
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -423,7 +423,8 @@ const Dashboard = ({ title }: DashProps) => {
                   <TableCell>
                     <Chip
                       label="DEFAULT"
-                      sx={{ backgroundColor: "lightgrey" }}
+                      color="secondary"
+                      sx={{fontSize: "10px"}}
                     />
                   </TableCell>
                 </TableRow>
