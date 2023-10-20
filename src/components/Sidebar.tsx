@@ -4,6 +4,7 @@ import { AirplaneTicket, Article, Person, Settings } from "@mui/icons-material";
 import { Lightbulb } from "@mui/icons-material";
 import { People } from "@mui/icons-material";
 import { Loyalty } from "@mui/icons-material";
+import { Link as Linker } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -121,9 +122,9 @@ const Sidebar = () => {
       >
         <AirplaneTicket />
 
-        <Link href="tickets" sx={{ textDecoration: "none", color: "inherit" }}>
+        <Linker to="/tickets" style={{textDecoration: "none", color: "inherit"}}>
           Tickets
-        </Link>
+        </Linker>
       </Paper>
       <Paper
         sx={{
