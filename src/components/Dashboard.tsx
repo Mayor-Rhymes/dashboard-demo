@@ -417,7 +417,7 @@ const Dashboard = ({ title }: DashProps) => {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    <Checkbox checked={true} />
+                    <Checkbox checked/>
                     Update ticket report
                   </TableCell>
                   <TableCell>
