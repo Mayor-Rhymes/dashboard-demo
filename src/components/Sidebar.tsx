@@ -1,10 +1,8 @@
 import { Divider, Link, Paper } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { AirplaneTicket, Article, Person, Settings } from "@mui/icons-material";
-import { GraphicEq } from "@mui/icons-material";
 import { Lightbulb } from "@mui/icons-material";
 import { People } from "@mui/icons-material";
-import graph from "../assets/graph.svg";
 import { Loyalty } from "@mui/icons-material";
 
 const Sidebar = () => {
