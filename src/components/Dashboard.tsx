@@ -6,7 +6,7 @@ import Stack from "@mui/material/Stack";
 
 import Divider from "@mui/material/Divider";
 
-import { Add } from "@mui/icons-material";
+import { Add, Circle } from "@mui/icons-material";
 import {
   LineChart,
   Line,
@@ -417,7 +417,7 @@ const Dashboard = ({ title }: DashProps) => {
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    <Checkbox />
+                    <Checkbox checked={true} />
                     Update ticket report
                   </TableCell>
                   <TableCell>
