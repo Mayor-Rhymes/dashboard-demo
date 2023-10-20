@@ -13,7 +13,7 @@ const Sidebar = () => {
       sx={{
         flexGrow: "2",
         background: "#363740",
-        height: "100%",
+        minHeight: "100%",
         alignItems: "center",
         paddingTop: "30px",
       }}

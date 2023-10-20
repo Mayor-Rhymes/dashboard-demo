@@ -27,7 +27,7 @@ interface DashProps {
 
 const Dashboard = ({ title }: DashProps) => {
   return (
-    <Box sx={{ flexGrow: "20", fontFamily: "Mulish" }}>
+    <Box sx={{ flexGrow: "15", fontFamily: "Mulish" }}>
       <Navbar title={title} />
       <Box
         sx={{
