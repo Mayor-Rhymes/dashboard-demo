@@ -6,7 +6,7 @@ import Stack from "@mui/material/Stack";
 
 import Divider from "@mui/material/Divider";
 
-import { Add, Circle } from "@mui/icons-material";
+import { Add } from "@mui/icons-material";
 import {
   LineChart,
   Line,
