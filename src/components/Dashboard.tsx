@@ -6,7 +6,7 @@ import Stack from "@mui/material/Stack";
 
 import Divider from "@mui/material/Divider";
 
-import { Add } from "@mui/icons-material";
+import { AddCircle } from "@mui/icons-material";
 import {
   LineChart,
   Line,
@@ -250,7 +250,7 @@ const Dashboard = ({ title }: DashProps) => {
                 Resolved
               </Typography>
 
-              <Typography variant="subtitle1" component="p">
+              <Typography variant="subtitle1" component="p" sx={{fontSize:"25px", fontWeight: "bold"}}>
                 449
               </Typography>
             </Box>
@@ -268,7 +268,7 @@ const Dashboard = ({ title }: DashProps) => {
                 Received
               </Typography>
 
-              <Typography variant="subtitle1" component="p">
+              <Typography variant="subtitle1" component="p" sx={{fontSize:"25px", fontWeight: "bold"}}>
                 426
               </Typography>
             </Box>
@@ -285,7 +285,7 @@ const Dashboard = ({ title }: DashProps) => {
                 Average first response time
               </Typography>
 
-              <Typography variant="subtitle1" component="p">
+              <Typography variant="subtitle1" component="p" sx={{fontSize:"25px", fontWeight: "bold"}}>
                 33m
               </Typography>
             </Box>
@@ -302,7 +302,7 @@ const Dashboard = ({ title }: DashProps) => {
                 Average response time
               </Typography>
 
-              <Typography variant="subtitle1" component="p">
+              <Typography variant="subtitle1" component="p" sx={{fontSize:"25px", fontWeight: "bold"}}>
                 3h 8m
               </Typography>
             </Box>
@@ -394,37 +394,78 @@ const Dashboard = ({ title }: DashProps) => {
                 <TableRow sx={{ border: "none" }}>
                   <TableCell>Create New Task</TableCell>
                   <TableCell>
-                    <Add />
+                    <AddCircle color="disabled"/>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    <Checkbox />
-                    Finish ticket update
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "10px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Checkbox />
+                      <Typography sx={{ fontWeight: "bold" }}>
+                        Finish ticket update
+                      </Typography>
+                    </Box>
                   </TableCell>
                   <TableCell>
-                    <Chip label="URGENT" color="warning" sx={{fontSize: "10px"}}/>
+                    <Chip
+                      label="URGENT"
+                      color="warning"
+                      sx={{ fontSize: "10px" }}
+                    />
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    <Checkbox />
-                    Create new ticket example
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "10px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Checkbox />
+                      <Typography sx={{ fontWeight: "bold" }}>
+                        Create new ticket example
+                      </Typography>
+                    </Box>
                   </TableCell>
                   <TableCell>
-                    <Chip label="NEW" color="success" sx={{fontSize: "10px"}}/>
+                    <Chip
+                      label="NEW"
+                      color="success"
+                      sx={{ fontSize: "10px" }}
+                    />
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
-                    <Checkbox checked/>
-                    Update ticket report
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "10px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Checkbox checked />
+                      <Typography sx={{ fontWeight: "bold" }}>
+                        Update ticket report
+                      </Typography>
+                    </Box>
                   </TableCell>
                   <TableCell>
                     <Chip
                       label="DEFAULT"
                       color="secondary"
-                      sx={{fontSize: "10px"}}
+                      sx={{ fontSize: "10px" }}
                     />
                   </TableCell>
                 </TableRow>
